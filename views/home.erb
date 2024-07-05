@@ -1,0 +1,8 @@
+<h1>Currency pairs</h1>
+<%= @from %>
+<% array= @currencies.keys %>
+<ul>
+<% array.each do |arr| %>
+<li><div><a href="/<%= arr %>" name="convert">Convert 1 <%= arr %> to ...</a></div></li>
+<% end %>
+</ul>

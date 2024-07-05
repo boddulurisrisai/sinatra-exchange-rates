@@ -1,0 +1,8 @@
+<h1>Convert <%= @from %></h1>
+<p>Go <a href="/">back</a>.</p>
+<% array= @currencies.keys %>
+<ul>
+<% array.each do |arr| %>
+<li><div><a href="/<%= @from %>/<%= arr %>" name="convert">Convert 1 <%= @from %> to <%= arr %> ...</a></div></li>
+<% end %>
+</ul>
